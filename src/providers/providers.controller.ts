@@ -18,7 +18,7 @@ export class ProvidersController {
     return this.providersService.create(createProviderDto);
   }
 
-  @Auth("Admin")
+  @Auth("Employee")
   
   @Get()
   findAll(@UserData() user: User) {
